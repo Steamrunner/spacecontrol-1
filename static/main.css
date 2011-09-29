@@ -1,0 +1,55 @@
+html {
+    background-color: #fafafa;
+}
+
+body {
+    background-color: #fafafa;
+    padding-top: 20px;
+}
+
+.container-header {
+    position: absolute;
+    width: 621px;
+    height: 40px;
+    margin: -10px -21px 0 -21px;
+    background-image: url('cafe.png');
+    background-repeat: repeat-x;
+}
+
+.header {
+    margin: 0px auto;
+    background-color: #fafafa;
+    border: 7px solid #afafaf;
+}
+
+.coffee {
+    margin: 0px auto;
+    background-color: #fff1da;
+    border: 7px solid orange;
+}
+
+.light {
+    margin: 0px auto;
+    background-color: #DDEEF6;
+    border: 7px solid #C0DEED;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.light .actions {
+    background-color: inherit;
+    border: none;
+    width: 150px;
+    margin: 17px auto;
+    padding: 0;
+}
+
+.coffee .actions {
+    background-color: inherit;
+    border: none;
+    width: 96px;
+    margin: 17px auto;
+    padding: 0;
+}
