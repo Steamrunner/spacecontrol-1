@@ -35,6 +35,20 @@ def switch_off(id):
     g.space_control.switch(id, False)
     return 'OK'
 
+@app.route('/api/switch_all_on')
+def switch_all_on():
+    g.space_control.switch(3, True)
+    g.space_control.switch(4, True)
+    g.space_control.switch(5, True)
+    return 'OK'
+
+@app.route('/api/switch_all_off')
+def switch_all_off():
+    g.space_control.switch(3, False)
+    g.space_control.switch(4, False)
+    g.space_control.switch(5, False)
+    return 'OK'
+
 @app.route('/hostname.js')
 def hostname():
     return Response('HOSTNAME = "%s";' % request.host, mimetype='application/javascript');

@@ -19,6 +19,13 @@ window.App = (function($) {
     $('#light-three-on').bind('click', function() {lightHandler(5, true);});
     $('#light-three-off').bind('click', function() {lightHandler(5, false);});
 
+    $('#light-all-off').bind('click', function() {
+        $.ajax('http://' + HOSTNAME + '/api/switch_all_off');
+    });
+    $('#light-all-on').bind('click', function() {
+        $.ajax('http://' + HOSTNAME + '/api/switch_all_on');
+    });
+
     // Coffee
     var coffeeHandler = function(id) {
         var url = 'http://' + HOSTNAME + '/api/button/' + id;

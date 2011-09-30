@@ -12,7 +12,7 @@ class SpaceControl(object):
         pass
 
     def _relay_cmd(self, id, state):
-        self.serial.write("%"+str(id)+"#"+str(state))
+        #self.serial.write("%"+str(id)+"#"+str(state))
         sleep(self.TIMEOUT)
 
     def button(self, id):
