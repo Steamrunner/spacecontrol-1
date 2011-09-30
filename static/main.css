@@ -25,13 +25,13 @@ body {
 .coffee {
     margin: 0px auto;
     background-color: #fff1da;
-    border: 7px solid orange;
+    border: 14px solid orange;
 }
 
 .light {
     margin: 0px auto;
     background-color: #DDEEF6;
-    border: 7px solid #C0DEED;
+    border: 14px solid #C0DEED;
 }
 
 .container {
@@ -49,7 +49,7 @@ body {
 .coffee .actions {
     background-color: inherit;
     border: none;
-    width: 135px;
+    width: 150px;
     margin: 17px auto;
     padding: 0;
 }

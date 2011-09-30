@@ -7,11 +7,12 @@ class SpaceControl(object):
     TIMEOUT = 0.5
 
     def __init__(self, serial_port, about_rate):
-        self.serial = Serial(serial_port, about_rate)
-        self.serial.open()
+        #self.serial = Serial(serial_port, about_rate)
+        #self.serial.open()
+        pass
 
     def _relay_cmd(self, id, state):
-        self.serial.write("%"+str(id)+"#"+str(state))
+        #self.serial.write("%"+str(id)+"#"+str(state))
         sleep(self.TIMEOUT)
 
     def button(self, id):
@@ -23,5 +24,6 @@ class SpaceControl(object):
         self._relay_cmd(id, state)
 
     def close(self):
-        self.serial.close()
+        #self.serial.close()
+        pass
 
