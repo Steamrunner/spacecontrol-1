@@ -41,7 +41,7 @@ body {
 .light .actions {
     background-color: inherit;
     border: none;
-    width: 150px;
+    width: 220px;
     margin: 17px auto;
     padding: 0;
 }
@@ -49,7 +49,7 @@ body {
 .coffee .actions {
     background-color: inherit;
     border: none;
-    width: 96px;
+    width: 200px;
     margin: 17px auto;
     padding: 0;
 }
